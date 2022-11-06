@@ -1,9 +1,8 @@
 % Metódy inžinierskej práce
 
-%\documentclass[10pt,twoside,slovak,a4paper]{article}
-\documentclass{coursepaper}
-\usepackage[slovak]{babel}
-%\usepackage[T1]{fontenc}
+\documentclass[10pt,twoside,slovak,a4paper]{article}
+%\documentclass{coursepaper}
+\usepackage[english]{babel}
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -15,15 +14,15 @@
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Gamification of military education and training\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2022/23, vedenie: Ing. Fedor Lehocki, PhD.}} % meno a priezvisko vyučujúceho na cvičeniach
 
-\author{Meno Priezvisko\\[2pt]
+\author{Jakub Valach\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
+	{\small \texttt{xvalachj@stuba.sk}}
 	}
 
-\date{\small 30. september 2015} % upravte
+\date{\small 2. november 2022} 
 
 
 
@@ -32,100 +31,126 @@
 \maketitle
 
 \begin{abstract}
-\ldots
+The main purpose of this thesis is to document the application of gamification elements in a military environment and demonstrate its (dis)advantages. The rapid development of digital systems provides various learning opportunities for not only the civilian, but also for the military sector. This paper will go into detail about different gamification elements suitable for this role and it will also touch on the necessary adaptation of acquired skills in real combat.
 \end{abstract}
 
 
 
-<<<<<<< HEAD
-\section{Úvod č.3}
-=======
-\section{Úvod č.2}
->>>>>>> branch1
+=============================================
+\section{Introduction}
 
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+With the rapid advancement of technology and the growing digitalization of society it is prudent to look into the possibilities of this new era. In order to increase productivity and motivate people to accomplish necessary tasks a new concept has been established. Gamification works on the principle of bringing certain elements of (computer) games into real life in order to motivate the subject and make even the dullest of tasks seem as something entertaining. 
+\par In this paper we will go over the application of this method in the military sector. We will lay out both the advantages and disadvantages of gamification in parts \ref{benefits} and \ref{disadvantages} , we will discuss different methods to successfully implement gamification elements in all aspects of the military in part \ref{implementation} and attempt to differentiate between the needs of the rank-and-file troops (\ref{rank-and-file}) and their commanders (\ref{command}). In the next part (\ref{adaptation}) of this paper we will ponder the correct application and adaptation of acquired skills in real life scenarios and go over the most likely problems.
+\newpage
+%Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+%Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
+%Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
+%Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
+%Záverečné poznámky prináša časť~\ref{zaver}.
 
-\includegraphics{MIP Umletino.pdf}
-
-\section{Nejaká časť} \label{nejaka}
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
+%\includegraphics{MIP Umletino.pdf}
 
 
 
-\section{Iná časť} \label{ina}
+\section{Gamification in the military} \label{body}
 
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+The military sector has long been neglected and thus many new technologies that could greatly improve both the efficiency and performance haven’t been properly implemented yet. Gamification stands as one of the most promising tools to accomplish these goals. The main goal of gamification in this scenario is to use the virtual environment to help educate enlisted troops, motivate and reward them for their accomplishments and restructuralize the current training model to be more user-friendly\cite{tomcho2019motivating}.
 
 
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+%\begin{figure*}[tbh]
+%\centering
+%Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+%\caption{Rozhodujúci argument.}
+%\label{f:rozhod}
+%\end{figure*} 
 
-Niekedy treba uviesť zoznam:
+\subsection{Status of gamification in the military} \label{status}
 
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
-
-Ten istý zoznam, len číslovaný:
-
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
+Over the last couple of decades multiple attempts at implementing gamification elements have been made, however they have not always yielded the expected results. Lacklustre usage of leader boards, point systems and awards have often not been able to properly properly and proportionaly award users for their actions. Several past attempts have shown that these rewards (points) were given out for rather nonchallenging or simple tasks and thus the users were not inclined to repeat such actions\cite{tomcho2019motivating}.
 
 
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+\subsection{Benefits of gamification} \label{benefits}
 
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
+Gamification is still very much an evolving concept, but many advantages have been cited both in theory and in practice. Proper implementation can have positive effects on the effectiveness of learning, motivation to keep progressing and improvement of problem-solving skills. The targeted individual (or group) must not only follow a clearly laid-out path towards success, but be encouraged to experiment, strategize and look for creative solutions\cite{tomcho2019motivating}.
+\par Another overlooked benefit is the cost of such training. Whereas conventional methods of education and training have been adequate in the past, a clear transition towards a cyber-centred system would save a lot of money in maintenance, transportation and overall logistics when it comes to periodical training\cite{fletcher2000overview}. In certain branches of the modern military such as the air force, navy or armoured/mechanized units the running costs of training far exceeds the projected price of a virtual training network. 
+\par For example, one of the main problems of modern fighter jet pilots is the retention of skills\cite{noh2020gamification} and limited flight time throughout the year. Funding, weather, availability of platforms and noise complaints from the civilian population are only a few of many aspects that can be brought forward as likely causes of these problems. Gamification can alleviate these complications by granting pilots the ability to use sophisticated flight simulators when necessary.
+Individuals can also greatly benefit from these technologies and training frameworks. Gamification can and should make the target audience feel the need to improve and strive towards desired attributes of a modern soldier.
 
 
 
 
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+\subsection{Disadvantages of gamification} \label{disadvantages}
+
+There are however multiple downsides to be expected from the implementation of gamification elements. It is very important to not underestimate these and attempt to limit the “damages” as much as possible. 
+Some of these problems include the disconnection from reality, improper implementation (and thus undesired effect), inability to carry over acquired skills to real life combat situations and also vulnerability to cyber-attacks and foreign espionage.
+
+
+
+\subsection{Implementation of gamification elements} \label{implementation}
+
+
+\subsubsection{Gamification in rank-and-file positions} \label{rank-and-file}
+
+\subsubsection{Gamification in the command structure} \label{command}
+
+The potential for improvement exists not only for regular rank-and-file servicemen, but also for command-and-control structures. Commanders should be encouraged to hone their theoretically acquired skills in virtual and gamified environments. \par One of the ways to accomplish such a task is to expand the war game program to include both conventional and virtual/simulated exercises. In these exercises the commanders are divided into two opposing teams and given resources to accomplish pre-set goals. War gaming is a cost-effective way of giving officers simulated combat and problem-solving experience. This method exploits the natural human competitiveness, improves adaptability and decision-making processes\cite{fletcher2000overview}. 
+
+
+
+\subsection{Adaptation of gamification in real life} \label{adaptation}
+
+\section{Conclusion} \label{conclusion}
+
+
+
+%\cite{noh2020gamification}
+%\cite{tomcho2019motivating}
+%\cite{webley2015supernatural}
+%\cite{joy2017investigation}
+%\cite{fletcher2000overview}
+
+%Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).%\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+%Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+
+%Niekedy treba uviesť zoznam:
+
+%\begin{itemize}
+%\item jedna vec
+%\item druhá vec
+%	\begin{itemize}
+%	\item x
+%	\item y
+%	\end{itemize}
+%\end{itemize}
+
+%Ten istý zoznam, len číslovaný:
+
+%\begin{enumerate}
+%\item jedna vec
+%\item druhá vec
+%	\begin{enumerate}
+%	\item x
+%	\item y
+%	\end{enumerate}
+%\end{enumerate}
 
 
 
 
-\section{Záver} \label{zaver} % prípadne iný variant názvu
+%\paragraph{Veľmi dôležitá poznámka.}
+%Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
 
-\section{Ďalšia sekcia}
 
-\input {novy.tex}
 
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{literatura}
+\bibliography{literature}
 %\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \bibliographystyle{abbrv}
 \end{document}
